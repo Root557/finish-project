@@ -1,0 +1,1639 @@
+@import url('libs/bootstrap.min.css');
+@import url('libs/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+// lg
+@large: ~"screen and (min-width: 1200px)";
+// xs
+@smartphone: ~"only screen and (max-width: 767px)";
+// sm
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 991px)"; 
+// md
+@desktop: ~"only screen and (min-width: 992px) and (max-width: 1119px)";
+
+
+@menu-color: white;
+@header-color: rgb(61, 99, 143);
+@navbar-color: rgb(25, 30,37);
+@navmenu-color: rgb(255, 239, 130);
+@price-color: rgb(35, 53, 76);
+@auction-color: rgb(209, 242, 255);
+@shop-counter-color: rgb(208, 217, 227);
+@row-7-color: rgb(36, 54, 79);
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+  width: 100%;
+	height: 4650px;
+	background-image: url('../img/bcg-img/bcg-img.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  @media @smartphone {
+    height: 3700px;
+    
+  }
+  @media @tablet {
+    height: 5700px;
+  }
+  @media @desktop {
+    height: 5100px;
+  }
+}
+.main {
+	background: white;
+  height: 4350px;
+  @media @tablet {
+    height: 5300px;
+  }
+  @media @desktop {
+    height: 4700px;
+  }
+  @media @smartphone {
+    height: 3300px;
+    width: 100%;
+  }
+}
+.header {
+	
+	background-color: rgb(32, 48, 69);
+  display: inline-block;
+  width: 100%;
+ 
+	
+}
+.logo {
+margin-top: 50px;
+margin-bottom: -100px;
+margin-left: 20px;
+display: inline-block;
+@media @tablet, @smartphone, @desktop {
+    width: 120px;
+    margin-top: 5px;
+
+
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+  
+}
+@media @smartphone, @tablet {
+    width: 60px;
+    margin-top: -10px;
+  
+}
+
+}
+
+.phone-call {
+	display: inline-block;
+}
+.phone {
+	
+	color: white;
+	font-size: 20pt;
+	font-variant: small-caps;
+  margin-top: 10px;
+  @media @smartphone, @tablet {
+    font-size: 13px;
+    margin-top: 20px;
+  
+}
+ @media @desktop {
+    font-size: 25px;
+    margin-top: 20px;
+  
+}
+	
+}
+.call {
+	
+	color: rgb(255, 222, 0);
+	font-size: 10pt;
+	text-transform: uppercase;
+	margin-top: -10px;
+  @media @smartphone, @tablet {
+    font-size: 10px;
+    
+  
+}
+	
+	
+}
+
+.info-menu {
+	display: inline-block;
+  margin-top: 15px;
+  @media @tablet, @smartphone, @desktop {
+    text-align: left;
+   
+  
+}
+a:hover, a:active, a:visited, a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+
+
+	
+}
+
+
+li {
+	display: inline-block;
+
+	
+	
+}
+a {	
+	padding-right: 1px;
+	font-size: 14pt;
+	display: inline-block;
+	color: white;
+	font-variant: small-caps;
+  letter-spacing: 0px;
+  @media @smartphone {
+    font-size: 10px;
+    text-align: justify;
+    margin-top: 10px;
+  
+}
+@media @tablet {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 10px;
+  
+}
+@media @desktop {
+    font-size: 20px;
+    text-align: justify;
+  
+}
+
+
+	}
+  a:hover, a:active, a:visited, a:link {
+    text-decoration: none;
+    color: black;
+  }
+ 
+.basket-login {
+	
+	display: inline-block;
+	margin-top: 30px;
+  float: right;
+  @media @tablet, @smartphone, @desktop {
+    text-align: center;
+    
+  
+}
+
+ 
+
+.basket {
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	border-left: 1px solid white;
+	border-right: 2px solid white;
+  @media @smartphone {
+    width: 80px;
+    
+  
+}
+	
+}
+.count {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgb(255, 222, 0);
+	border-radius: 50%;
+	background-color: rgb(255, 222, 0);
+	margin-right: 5px;
+	
+}
+
+.login {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: center;
+	
+
+}
+
+}
+
+.navigation {
+  display: block;
+  
+  height: 5vh;
+  .new {
+    color: @header-color;
+    font-size: 25px;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    @media @smartphone {
+    font-size: 15px;
+    text-align: center;
+    
+  
+}
+@media @tablet {
+    font-size: 25px;
+    text-align: center;
+    
+  
+}
+@media @desktop {
+    
+    text-align: center;
+    
+  
+}
+  }
+  .fish-lab {
+    display: block;
+    
+    color: @header-color;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-top: -25px;
+    text-align: justify;
+    @media @smartphone {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+    
+  
+}
+@media @tablet {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+  }
+  @media @desktop {
+    
+    text-align: center;
+    
+  
+}
+}
+  
+	
+}
+form {
+    display: block;
+    margin-top: 40px;
+    
+   
+    input {
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+     height: 40px;
+     border: 1px solid rgb(196, 196, 196);
+     border-radius: 5px;
+     background-image: url(../img/search.png);
+     background-repeat: no-repeat;
+     background-size: 30px; 
+     padding: 10px;
+     padding-left: 50px;
+     background-position: 2% 50%;
+  }
+  }
+
+.row-2a {
+  display: block;
+  margin-left: -50px;
+  margin-right: -50px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: rgb(255, 222, 0);
+  border: 1px solid rgb(255, 222, 0);
+  border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+  
+  @media @tablet {
+    height: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  @media @smartphone {
+    height: 70px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
+  .dropdown {
+   
+    background-color: rgb(255, 222, 0);
+    display: inline-block;
+    
+
+    
+    
+
+  button {
+   
+    display: inline-block;
+    background-color: rgb(255, 222, 0);
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(255, 222, 0);
+    font-size: 17px;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-left: 40px;
+    white-space: nowrap;
+    @media @desktop {
+    
+    width: 150px;
+    font-size: 14px;
+    
+  
+}
+@media @tablet {
+    
+    width: 120px;
+    font-size: 12px;
+    text-align: justify;
+    word-spacing: 0px;
+    margin-left: 15px;
+    font-variant: small-caps;
+    padding-left: -50px;
+    white-space: nowrap;
+    
+    
+
+    
+  
+}
+@media @smartphone {
+    
+    
+
+    width: 51px;
+    font-size: 7px;
+    text-align: left;
+    word-spacing: 0px;
+    margin-left: 3px;
+    font-variant: small-caps;
+    
+    white-space: normal;
+   
+   
+
+    
+  
+}
+
+    .first-button {
+      margin-left: 50px;
+    
+    @media @smartphone {
+    
+    margin-left: 40px; }
+   
+
+    
+  
+}
+  }
+  button:hover, button:active, button:focus {
+    background-color: @navmenu-color;
+    outline: none;
+  } 
+  .dropdown-menu {
+       
+      background-color: white;
+      width: 500px;
+      height: 250px;
+      margin-left: 40px;
+      border: 1px solid white;
+      border-radius: 10px; 
+      list-style-type: none;
+      @media @tablet {
+          width: 500px;
+          height: 250px;
+          font-size: 10px;
+          margin-left: 18px;
+        }
+         @media @smartphone {
+        width: 100%;
+        height: 400px;
+        font-size: 10px;
+        margin-left: 10px;
+
+      }
+      li {
+        display: inline-block;
+        width: 45%;
+        margin-left: 20px;        
+        }
+
+     
+    }
+    .menu-3 {
+        margin-left: -150px;
+         @media @smartphone {
+        margin-left: -85px;
+      }
+      }
+
+    .menu-4, .menu-5 {
+      margin-left: -260px;
+      @media @tablet {
+        margin-left: -360px;
+      }
+      @media @smartphone {
+        margin-left: -85px;
+      }
+
+    }
+  
+    
+  
+  }
+  
+  .shadow-left::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 5px; bottom: -29px; /* Положение треугольника */
+    border: 15px solid transparent;
+    border-top: 15px solid rgb(109, 98, 24);
+    border-right: 15px solid rgb(109, 98, 24);
+    @media @tablet, @smartphone {
+      display: none;
+    }
+   }
+  
+   .shadow-right::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    right: 5px; bottom: -28px; /* Положение треугольника */
+    border: 15px solid transparent; 
+    border-left: 15px solid rgb(109, 98, 24); 
+    border-top: 15px solid rgb(109, 98, 24);
+     @media @tablet, @smartphone {
+      display: none;
+    }
+   }
+
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+
+
+ .row-3 {
+    
+  
+  .banner {
+    
+    
+ 
+    
+    background-image: url(../img/fonnercut.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+   
+    
+    
+    
+  
+ 
+
+  
+  
+    .btn {
+      display: inline-block;
+      margin-top: 280px;
+      margin-left: 100px;
+      text-align: left;
+      border: 1px solid @price-color;
+      background-color: @price-color;
+      width: 200px;
+      height: 100px;
+
+     
+      p {
+        color: rgb(255, 222, 0);
+        font-size: 25px;
+        font-weight: bold;
+        @media @tablet, @smartphone {
+          font-size: 20px;
+        }
+        
+      }
+      .btn-fisher {
+        width: 120px;
+        height: 30px;
+        display: inline-block;
+        margin-left: 50px;
+        background-color: rgb(255, 222,0);
+        border: 1px solid rgb(255, 222, 0);
+        border-radius: 5px;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        vertical-align: middle;
+        @media @tablet, @smartphone {
+          font-size: 10px;
+        }
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: -3px;
+        }
+      }
+    }
+    
+    .logo-shop {
+      margin-top: 280px;
+      margin-left: 80px;
+    }
+  
+}
+}
+  
+    
+.auction {
+  
+  height: 600px;
+  background-image: url(../img/clouds.jpg);
+  background-repeat: no-repeat;
+
+  @media @smartphone {
+    height: 1000px;
+    background-size: cover;
+  }
+
+  @media @tablet, @desktop {
+    
+    background-size: cover;
+
+  }
+  .auction-first {
+    
+   
+    border-top: 2px solid white;
+    margin-top: 80px;
+     @media @smartphone {
+      margin-top: 130px;
+    }
+    
+    
+
+  }
+  .auction-2{
+    margin-top: 60px;
+    @media @smartphone {
+      margin-top: 90px;
+    }
+
+    p {
+      display: inline-block;
+      color: white;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      @media @smartphone {
+        font-size: 15px;
+        margin-top: 30px;
+      }
+      @media @tablet, @desktop {
+        font-size: 25px;
+        margin-top: 10px;
+      }
+      
+    }
+    img {
+      display: inline-block;
+      margin-left: 30px;
+      width: 30px;
+      margin-top: -10px;
+      @media @smartphone {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+
+    }
+  }
+  
+  .auction-3 {
+    border-top: 2px solid white;
+    margin-top: 80px;
+   
+    @media @smartphone {
+      margin-top: 130px;
+    }
+    
+  }
+  .auction-text {
+    color: white;
+    font-size: 12px;
+  }
+ 
+  .b-one {
+    margin-top: 60px;
+    @media @smartphone {
+      margin-top: 60px;
+      text-align: center;
+    }
+    @media @tablet, @desktop {
+     
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .box-imgs {
+    display: inline-flex;
+    flex-direction: row; 
+
+    .box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: @auction-color;
+    border-radius: 50%; 
+   
+   @media @smartphone {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+   }
+   @media @tablet, @desktop {
+    width: 80px;
+    height: 80px;
+   }
+    .first-img {
+     
+      display: inline-block;
+      padding-top: 30px;
+      padding-left: 25px;
+      color: rgb(70,176,192);
+      @media @smartphone {
+        padding-top: 15px;
+        padding-left: 10px;
+        width: 45px;
+      }
+      @media @tablet, @desktop {
+        padding-top: 25px;
+        padding-left: 20px;
+        width: 60px;
+      }
+      
+      
+    }
+     p {
+    display: inline-block;
+    font-size: 16px;
+    font-variant: small-caps;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    @media @smartphone {
+      font-size: 13px;
+      margin-top: 25px;
+      font-weight: bold;
+      text-align: left;
+
+    }
+     @media @tablet, @desktop {
+      font-size: 14px;
+      margin-top: 30px;
+      font-weight: bold;
+      text-align: left;
+
+    }
+  }
+  }
+
+    .box-img {
+      width: 100px;
+      margin-left: -30px; 
+      margin-right: -40px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 25px;
+      @media @smartphone, @tablet, @desktop {
+      display: none;
+      
+
+    }
+
+    
+      
+  }
+  .dif {
+      margin-left: 100px;
+    }
+  #second-box {
+   
+    display: none;
+    
+  }
+}
+
+
+  }
+  
+  button {
+    margin-top: 100px;
+    border: 1px solid rgb(255, 222, 0);
+    width: 120px;
+    height: 40px;
+    background-color: rgb(255, 222, 0);
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    @media @tablet, @desktop {
+      margin-top: 30px;
+      text-align: center;
+    }
+    @media @smartphone {
+      margin-top: 50px;
+    }
+  }
+  
+}
+.row-5 {
+  height: 400px;
+  @media @tablet, @desktop {
+    height: 500px;
+  }
+  .sale-1 {
+    border-top: 2px solid black;
+    margin-top: 0;
+    @media @smartphone {
+      margin-top: 25px;
+    }
+    @media @tablet, @desktop {
+      margin-top: 30px;
+
+    }
+  }
+  .sale-2 {
+    p {
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 30px;
+      margin-top: -15px;
+      @media @smartphone {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 15px;
+      }
+      @media @tablet {
+      margin-top: 20px;
+      font-size: 15px;
+
+    }
+    @media @desktop {
+      margin-top: 20px;
+      font-size: 20px;
+
+    }
+    }
+  }
+  .sale-3 {
+    border-top: 2px solid black;
+    margin-top: 0;
+    @media @smartphone {
+      margin-top: 25px;
+    }
+     @media @tablet, @desktop {
+      margin-top: 30px;
+    }
+  }
+  .pags {
+   
+    #shop-link {
+      color: rgb(21, 86, 161);
+      text-decoration: underline;
+      margin-right: 50px;
+      @media @smartphone {
+      font-size: 15px;
+    }
+
+
+    }
+    #shop-link:hover {
+      color: black;
+      text-decoration: none;
+    }
+    .arrows {
+      display: inline-block;
+      margin-right: 50px;
+      a {
+        display: block;
+        color: black;
+        background-color: white;
+        border: 1px solid white;
+
+      .right {
+      margin-right: 60px;
+      color: black;
+      display: inline-block;
+    }
+    .left {
+      color: black;
+      display: inline-block;
+    }
+
+    }
+    a:link {
+        color: black;
+      }
+    a:visited {
+      color: black;
+    }
+
+    
+  }
+
+}
+}
+	
+
+			
+
+
+ 
+.col-item{   
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: #FFF;
+    padding: 10px;
+    height: 300px;
+    @media @tablet, @desktop {
+      
+      margin-botom: 150px;
+      height: 400px;
+
+    }
+    
+    
+}
+.col-item:focus .right {
+  color:black;
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.col-item:hover {
+    box-shadow: 0 0 5px 5px rgba(221, 221, 221, 1); 
+    cursor: pointer;
+
+}
+.col-item:hover .shopping-cart {
+  display: block;
+}
+.col-item .price
+{
+    
+    margin-top: 5px;
+
+
+}
+.col-item button  {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  border: 3px solid red;
+  background-color: white;
+  
+
+  
+  
+
+}
+.col-item .price {
+  
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  text-transform: uppercase;
+  
+  color: black;
+  text-align: center;
+  
+  font-size: 11px;
+  
+  white-space: nowrap;
+  @media @tablet, @desktop {
+    white-space: normal;
+    font-size: 10px;
+  }
+ 
+  
+ 
+}
+.price span {
+    color: red;
+    
+    text-transform: uppercase;
+     vertical-align: middle;
+     text-decoration: underline;
+}
+.col-item .photo {
+  height: 80px;
+}
+
+   
+  
+.col-item .plus-btn, .col-item .minus-btn, .col-item .basket {
+  border: 1px solid rgb(208, 217, 227);
+} 
+
+.col-item .plus-btn, .col-item .minus-btn, .col-item input, .col-item .basket-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  
+  color: black;
+  border: 1px solid @shop-counter-color;
+  
+  font-size: 10px;
+  @media @tablet {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+    
+  }
+ 
+}
+.col-item input {
+  background-color: @shop-counter-color;
+  padding-left: 8px;
+
+}
+.shopping-cart {
+  display: none;
+}
+
+.col-item .prices
+{
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+
+    text-align: justify;
+    @media @tablet,@desktop {
+      font-size: 8px;
+      line-height: 10px;
+    }
+}
+
+.price-text-color
+{
+    color: black;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    span {
+      text-decoration: line-through;
+      font-weight: normal;
+    }
+}
+#car-one {
+  height: 750px;
+  @media @smartphone {
+    height: 950px;
+  }
+  .carusel-1 {
+    @media @smartphone {
+      height: 450px;
+      
+      
+
+    }
+    .photo {
+      @media @smartphone {
+        width: 75%;
+        height: 150px;
+      }
+    }
+
+  }
+  .carusel-1 {
+  @media @smartphone {
+    
+    margin-top: 20px;
+  }
+}
+
+}
+#car-two {
+  height: 500px;
+}
+#car-three {
+  height: 550px;
+  margin-top: 70px; 
+  .carusel-3 {
+    height: 500px;
+  }
+}
+.col-item .item {
+  display: inline-block;
+}
+.col-item a {
+  display: inline-block;
+  color: black;
+  padding: 0;
+  
+
+}
+.col-item .likes-link {
+  display: inline-block;
+  margin-top: 5px;
+  
+  width: 20px;
+  height: 20px;
+ 
+
+}
+
+
+
+.col-item .likes-link .signal-link, .col-item .likes-link .heart-link {
+  font-size: 10px;
+  display: block;
+  margin-bottom: 0px;
+
+  
+}
+.col-item .basket-link {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(21, 86, 161);
+  color: white;
+  border: 1px solid blue;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-top: 15px;
+  display: inline-block;
+  text-align: center;
+  
+ 
+}
+.text-shop {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 30px;
+  color: yellow;
+  text-align: center;
+  text-transform: uppercase;
+  @media @smartphone {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  @media @tablet {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  @media @desktop {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+}
+.shop-left, .shop-right {
+  border-top: 3px solid yellow;
+  margin-top: 60px;
+  display: inline-block;
+  @media @desktop {
+    margin-top: 37px;
+  }
+
+}
+.shopping-cart {
+  
+  text-align: center;
+}
+
+.parts {
+  background-image: url(../img/bcg-img6.jpg);
+  
+  height: 500px;
+  @media @tablet, @desktop {
+    margin-top: 550px;
+    height: 900px;
+  }
+  @media @smartphone {
+      margin-top: 950px;
+      height: 700px;
+
+    }
+    @media @desktop {
+      height: 500px;
+    }
+
+  .electro {
+    display: inline-block;
+    flex-direction: column;
+    @media @tablet, @desktop {
+      margin-top: 20px;
+    }
+
+    a {
+      display: block;
+      color: yellow;
+      font-size: 25px;
+      text-decoration: underline;
+      @media @smartphone, @tablet, @desktop {
+        font-size: 15px;
+        text-align: center;
+      }
+
+
+    }
+    img {
+      display: inline-block;
+      @media @smartphone {
+        width: 120px;
+      }
+      @media @tablet, @desktop {
+        width: 150px;
+      }
+    }
+  }
+}
+.row-7 {
+
+  .last-1, .last-3 {
+    border-top: 3px solid @row-7-color;
+    margin-top: 60px;
+  }
+  .last-2 {
+    p {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: @row-7-color;
+      margin-top: 50px;
+      font-weight: bold;
+      white-space: nowrap;
+      @media @tablet {
+        font-size: 20px;
+      }
+      @media @smartphone {
+        font-size: 15px;
+        white-space: normal;
+
+      }
+    }
+
+  }
+  .col-item {
+    height: 430px;
+    @media @tablet {
+      margin-top: -30px;
+      height: 500px;
+    }
+    @media @desktop {
+      margin-top: -30px;
+      height: 450px;
+    }
+  }
+  .photo img {
+    display: block;
+    width: 150px;
+    height: 100px;
+    padding: absolute;
+    margin-top: 50px;
+    @media @tablet, @desktop {
+      width: 100%;
+    }
+  }
+  .discont {
+    display: block;
+    border: 1px solid @row-7-color;
+    border-radius: 50%;
+    background-color: @row-7-color;
+    color: yellow;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-top: -120px;
+    margin-bottom: 100px;
+     float: right;
+     @media @tablet,@desktop {
+      width: 60px;
+      height: 60px;
+     }
+    p {
+    font-size: 35px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: inline-block;
+    line-height: 20px;
+    @media @tablet,@desktop {
+      font-size: 25px;
+      padding-left: 15px;
+      padding-top: 10px;
+    }
+
+    
+   
+   
+    .discont-text {
+      font-size: 17px;
+      padding-top: 10px;
+      margin-left: -5px;
+      @media @tablet,@desktop {
+        font-size: 10px;
+        
+        margin-left: -3px;
+        line-height: 12px;
+        display: inline-block;
+        padding-top: -50px;
+      }
+      
+      
+    }
+
+  }
+}
+h5 {
+  @media @tablet {
+    margin-top: 50px;}
+  }
+.plus-btn, .minus-btn, input, .basket-link, .likes-link {
+  @media @tablet {
+    width: 20px;
+  }
+
+}
+.signal-link {
+  @media @tablet {
+    margin-top: -5px;
+  }
+}
+}
+.row-8 {
+  .item {
+    margin-top: -50px;
+  }
+
+  .last-1, .last-3 {
+    border-top: 3px solid @row-7-color;
+    margin-top: 60px;
+  }
+  .last-2 {
+    p {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: @row-7-color;
+      margin-top: 50px;
+      font-weight: bold;
+      @media @tablet, @desktop {
+        font-size: 20px;
+      }
+      @media @smartphone {
+        font-size: 15px;
+      }
+    }
+  }
+  .col-item {
+    border: 1px solid rgb(212, 229, 248);
+    display: block;
+    width: 100%;
+    padding: 0;
+    height: 500px;
+    p {
+      display: block;
+      padding-top: 20px;
+
+
+    }
+    .date {
+      padding-left: 20px;
+      padding-bottom: 10px;
+      color: rgb(118, 118, 118);
+      @media @tablet, @desktop {
+        font-size: 12px;
+      }
+    }
+    img {
+      width: 100%;
+      height: 200px;
+      margin-top: -10px;
+    }
+    
+    .news {
+      margin-top: 150px;
+    }
+    .size {
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    padding: 5px; /* Поля */
+    text-overflow: ellipsis; /* Многоточие */
+    height: 150px;
+   }
+   
+
+
+  }
+  .info {
+    a {
+      color: rgb(21, 86, 161);
+      font-size: 20px;
+      text-decoration: underline;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      @media @tablet, @desktop {
+        font-size: 15px;
+        
+      }
+    }
+  }
+}
+.row-9 {
+  height: 50px;
+  .last-1, .last-3 {
+    border-top: 3px solid @row-7-color;
+    margin-top: 60px;
+  }
+  .last-2 {
+    p {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: @row-7-color;
+      margin-top: 50px;
+      font-weight: bold;
+      @media @tablet, @desktop {
+        font-size: 20px;
+      }
+      @media @smartphone {
+        font-size: 15px;
+      }
+    }
+  }
+  .col-lg-6 {
+    .about-info {
+      p {
+        font-size: 15px;
+
+         
+        @media @smartphone {
+        font-size: 12px;
+
+      
+      }
+        @media @tablet {
+        font-size: 15px;
+      
+      }
+      @media @desktop {
+        font-size: 13px;
+      
+      }
+      }
+    }
+    .about {
+      color: blue;
+      text-decoration: underline;
+      
+
+    }
+  }
+  .col-lg-5 {
+    .products {
+     display: inline-flex }
+    .product {
+      display: block;
+      width: 200px;
+      margin-right: -50px;
+      @media @smartphone {
+        width: 150px;
+        margin-left: 10px;
+      }
+      @media @tablet {
+        width: 300px;
+      }
+      @media @desktop {
+       width: 180px;
+      }
+      p {
+        font-size: 15px;
+        @media @tablet {
+          font-size: 15px;
+          margin-left: 30px;
+        }
+        @media @desktop {
+          font-size: 12px;
+        }
+         @media @smartphone {
+        font-size: 10px;
+      }
+
+      }
+    }
+
+    .payment {
+      display: inline-block;
+      p {
+        font-size: 18px;
+        font-variant: small-caps;
+        margin-bottom: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        @media @smartphone {
+        margin-left: 10px;
+      }
+      @media @tablet, @desktop {
+        margin-left: 30px;
+        font-size: 18px;
+      }
+
+      }
+      li {
+      @media @tablet {
+        text-align: center;
+      }
+      img {
+        @media @smartphone, @tablet {
+          display: inline-block;
+          text-align: center;
+          width: 20px;
+        }
+      }
+    }
+    }
+    
+  }
+}
+footer {
+  .social-info {
+    margin-top: 120px;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+    @media @tablet, @smartphone {
+     margin-top: 600px; 
+    }
+    @media @desktop {
+   margin-top: 470px;
+  }
+  }
+  .social {
+    display: inline-block;
+    @media @desktop, @tablet {
+    text-align: center;
+  }
+
+    .vk, .ok, .fb, .youtube {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      color: white;
+      font-size: 25px;
+      
+      margin-left: 20px;
+      margin-bottom: 20px;
+      @media @tablet, @desktop {
+        margin-top: 20px;
+      }
+
+    }
+    a:hover,
+    a:active,
+    a:visited,
+    a:link {
+      text-decoration: none;
+      color: white;
+    }
+    .vk {
+      background-color: rgb(84, 118, 154);
+    }
+    .ok {
+      background-color: rgb(235, 107, 14);
+
+    }
+    .fb {
+      background-color: rgb(88, 87, 146);
+    }
+    .youtube {
+      background-color: rgb(204, 8, 4);
+    }
+  }
+  .imperium  {
+    img {
+    display: inline-block;}
+    @media @tablet, @desktop {
+      margin-top: -20px;
+      
+    }
+    p {
+    @media @tablet, @desktop {
+      margin-top: 30px;
+      line-height: 12px;
+      font-size: 10px;
+    }
+  }
+  }
+  
+  .copy {
+    @media @tablet, @desktop {
+      margin-top: 50px;
+    }
+  }
+  .imperium {
+    color: white;
+    font-variant: small-caps;
+    font-size: 15px;
+    
+
+  }
+}
+
+.base {
+  width: inherit;
+  height: inherit;
+}
+.container-1 {
+  width: 100px;
+}
+.flipInY {
+  
+  animation-name: flipInY;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+}
+
+
+.shake {
+  animation-name: shake;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  
+  
+}
+.shake:hover {
+  animation-play-state: paused;
+
+}
+
+
+.logo:hover {
+  
+     
+    animation-name: flipInY;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  
+}
+.flipInY {
+  animation-name: flipInX;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
+.flipInX {
+  animation-name: flipInX;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+// .parts:hover .electro {
+//   animation-name: bounceIn;
+//   animation-duration: 1s;
+//   animation-delay: 0s;
+//   animation-iteration-count: 1;
+// }
+.base {
+  display: inline-block;
+  .container-1 {
+    display: inline-block;
+  }
+}
