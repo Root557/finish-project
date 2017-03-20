@@ -497,6 +497,11 @@ form input {
   vertical-align: middle;
   margin-top: -3px;
 }
+.row-3 .banner .btn .btn-fisher:active,
+.row-3 .banner .btn .btn-fisher:hover,
+.row-3 .banner .btn .btn-fisher:focus {
+  outline: none;
+}
 .row-3 .banner .logo-shop {
   margin-top: 280px;
   margin-left: 80px;
@@ -703,6 +708,11 @@ form input {
   .auction button {
     margin-top: 50px;
   }
+}
+.auction button:active,
+.auction button:hover,
+.auction button:focus {
+  outline: none;
 }
 .row-5 {
   height: 400px;
